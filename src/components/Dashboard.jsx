@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import "../Style/Dashboard.css";
 import { Tree } from "antd";
 import treeData from "./TreeData1";
-// import { CheckOutlined } from "@ant-design/icons";
-
-
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("Validate DocType");
@@ -22,34 +19,20 @@ const Dashboard = () => {
     });
   };
 
-  ////////////////////////////////////////////   DirectoryTree   ///////////////////////////////////////////////////////////////////////////
-
   const { DirectoryTree } = Tree;
   const onExpand = (keys, info) => {
     console.log("Trigger Expand", keys, info);
   };
 
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   const TreeData = generateTreeData(treeData);
 
-  // const [showLine, setShowLine] = useState(true);
-  // const [showIcon, setShowIcon] = useState(false);
-  // const [showLeafIcon, setShowLeafIcon] = useState(true);
+
 
   const onSelect = (selectedKeys, info) => {
     console.log("selected", selectedKeys, info);
   };
 
-  // const handleLeafIconChange = (value) => {
-  //   if (value === "custom") {
-  //     return setShowLeafIcon(<CheckOutlined />);
-  //   }
-  //   if (value === "true") {
-  //     return setShowLeafIcon(true);
-  //   }
-  //   return setShowLeafIcon(false);
-  // };
 
 
   const renderContent = () => {
@@ -65,15 +48,7 @@ const Dashboard = () => {
                 treeData={TreeData}
               />
             </div>
-            {/* <div style={{ marginBottom: 16 }}>
-              <Tree
-                showLine={showLine ? { showLeafIcon } : false}
-                showIcon={showIcon}
-                onSelect={onSelect}
-                treeData={TreeData}
-                style={treeStyle} 
-              />
-            </div> */}
+           
 
             <div className="content-btn">
               <button
