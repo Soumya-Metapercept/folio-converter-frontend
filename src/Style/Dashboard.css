@@ -1,0 +1,176 @@
+.container {
+  height: 600px;
+  margin: 31px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.tabBar {
+  display: flex;
+  color: #fff;
+  margin-top: 15px;
+  height: 40px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.tabActive {
+  background-color: #d93723;
+  color: white;
+  font-weight: 600;
+}
+
+.content {
+  padding: 20px;
+  height: 500px;
+  overflow-y: scroll;
+  margin-top: 20px;
+}
+
+.block-content {
+  transition: opacity 0.25s ease-out;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 1px;
+  overflow-x: visible;
+}
+
+.tree {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #d93723;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.directoryTree {
+  margin-top: 6px;
+  margin-left: 20px;
+  overflow: scroll;
+  height: 350px;
+}
+
+.content-btn {
+  text-align: center;
+  margin: 29px;
+}
+
+.content-btn button {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #d93723;
+}
+
+.block-content .row {
+  margin: 0px 0px 0px 20px;
+}
+
+
+.dita-btn {
+  margin: 30px 0px 0px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: #ea580c;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+.main-block .proceed-btn{
+  background-color: #ea580c;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  /* #bb460a; */
+}
+
+.main-block .proceed-btn:hover{
+  background-color: #bb460a;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+ 
+}
+
+.dita-btn1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.dita-btn1 .btn-secondary {
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #8b9099;
+}
+
+.dita-btn1 .btn-danger {
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #d93723;
+}
+
+.output-btn {
+  text-align: center;
+  margin: 30px;
+}
+
+.output-btn button {
+  background-color: #ea580c;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.output-btn .fa-solid{
+  font-size: 16px;
+  font-weight: 510;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+
+.output-btn button:disabled{
+  background-color: #ea580c;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+.directory-tree{
+  font-size: 16px;
+  font-weight: 500;
+  color: #545D6F;
+  background-color: white;
+}

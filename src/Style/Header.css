@@ -1,0 +1,84 @@
+ html , body {
+  background-color: #ebeef2;
+  font-family: "inter";
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 2px; 
+  left: 100px;
+  width: 70px;
+  height: 60px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+.dropdown {
+  position: absolute;
+  top: 15px;
+  right: 100px;
+}
+
+.dropdown .btn {
+  width: 69px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ffffff; 
+}
+
+.icon-circle i{
+  color:gray ;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    left: 15px; 
+  }
+
+  .dropdown {
+    right: 15px; 
+  }
+
+  .dropdown .btn {
+    width: 60px;
+    height: 30px;
+  }
+
+  .icon-circle {
+    width: 25px;
+    height: 25px;
+  }
+}
